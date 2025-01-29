@@ -55,10 +55,10 @@ export default function ShopStrainsClient(props) {
                         className="rounded-[10px] border-2 border-primary backdrop-blur-[44px] p-6"
                     >
                         <div className="flex gap-2 justify-end items-start">
-                            <p className="py-1 px-3 rounded-full bg-[#64D7DC] text-black font-semibold text-[10px] uppercase">
+                            <p className="py-1 px-3 rounded-full font-montserrat bg-[#64D7DC] text-[#005371] font-semibold text-[10px] uppercase">
                                 {strain.flavour}
                             </p>
-                            <p className="py-1 px-3 rounded-full bg-[#64D7DC] text-black font-semibold text-[10px] uppercase">
+                            <p className="py-1 px-3 rounded-full bg-[#64D7DC] text-[#005371] font-semibold text-[10px] uppercase">
                                 {strain.type}
                             </p>
                         </div>

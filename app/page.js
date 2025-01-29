@@ -356,8 +356,8 @@ export default async function Home() {
                     <>
                         <section className="container mx-auto lg:w-[80%] px-4">
                             <div className="text-start text-[125px] leading-none pb-2">
-                                <h2 className="leading-none text-[#00537152] text-[20px]">SHOP</h2>
-                                <h2 className="leading-none text-primary text-[64px]">by strain</h2>
+                                <h2 className="leading-none text-[#00537152] font-medium text-[20px] font-quatro">SHOP</h2>
+                                <h2 className="leading-none text-primary text-[64px] font-semibold font-quatro">by strain</h2>
                             </div>
                             <ShopStrains />
                         </section>
@@ -664,7 +664,7 @@ export default async function Home() {
                             <h2 className="text-5xl sm:text-[74px] font-semibold text-[#005371]">
                                 Questions?
                             </h2>
-                            <p className="text-[#005371] text-2xl sm:text-3xl font-semibold">
+                            <p className="text-[#005371] font-fontspring text-2xl sm:text-3xl font-semibold">
                                 We&apos;ve got answers...
                             </p>
                         </div>

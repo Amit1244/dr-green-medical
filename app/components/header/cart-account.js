@@ -49,7 +49,7 @@ export default function CartAccount(props) {
                             strokeMiterlimit="10"
                         />
                     </svg>
-                    <span className="hidden md:inline text-[#005371]">Cart</span>
+                    <span className="hidden md:inline text-[#005371] font-manrope">Cart</span>
                 </Link>
                 <div
                     title="Dashboard"
@@ -79,7 +79,7 @@ export default function CartAccount(props) {
                             strokeLinejoin="round"
                         />
                     </svg>
-                    <span className="hidden md:inline text-[#005371]">Dashboard</span>
+                    <span className="hidden md:inline text-[#005371] font-manrope">Dashboard</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="15"
@@ -104,7 +104,7 @@ export default function CartAccount(props) {
                     >
                         <div
                             onMouseOver={() => MenuHandler(true)}
-                            className={`justify-end text-end flex flex-col items-end gap-2 p-4 rounded-[10px]  border-2 border-[#005371] backdrop-blur-[44px] cursor-auto whitespace-nowrap`}
+                            className={`justify-end text-end flex flex-col font-manrope items-end gap-2 p-4 rounded-[10px]  border-2 border-[#005371] backdrop-blur-[44px] cursor-auto whitespace-nowrap`}
                         >
                             <Link href="/dashboard" className="block md:hidden text-[#005371]">
                                 Dashboard
@@ -140,7 +140,7 @@ export default function CartAccount(props) {
                                 Eligibility
                             </Link>
                             <button
-                                className="font-normal whitespace-nowrap text-[#005371]"
+                                className="font-normal whitespace-nowrap text-[#005371] font-manrope"
                                 title="Log Out"
                                 onClick={signOut}
                             >
@@ -153,7 +153,7 @@ export default function CartAccount(props) {
         );
     } else {
         return (
-            <nav className="flex justify-end items-center gap-10 text-[#005371]">
+            <nav className="flex justify-end items-center font-manrope gap-10 text-[#005371]">
                 <Link
                     href="/login"
                     className="flex items-center gap-2 relative"

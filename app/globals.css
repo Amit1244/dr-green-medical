@@ -19,14 +19,18 @@ body {
 
 
 @font-face {
-    font-family: 'Quatro';
-    src: url('/fonts/Quatro-Book.ttf') format('truetype');
+    font-family: 'Manrope';
+    src: url('/fonts/manrope-bold.otf') format('truetype');
     font-weight: 500;
-    /* Adjust as needed */
     font-style: normal;
-    /* Adjust as needed */
 }
 
+@font-face {
+    font-family: 'Fontspring';
+    src: url('/fonts/Fontspring-DEMO-cerapro-thin.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
 
 select:-internal-autofill-selected,
 select:-webkit-autofill,
