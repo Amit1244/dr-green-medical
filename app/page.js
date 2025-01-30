@@ -30,7 +30,7 @@ export async function generateMetadata() {
         title: "Dr. Green: " + pageBy.title,
         description: "Your trusted source for medical cannabis.",
         openGraph: {
-            images: [pageBy.pageContent.heroCelebrityPhoto.node.sourceUrl],
+            images: [pageBy?.pageContent?.heroCelebrityPhoto?.node?.sourceUrl],
         },
     };
 }
@@ -245,17 +245,14 @@ export default async function Home() {
                 <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
                     <img
                         src={
-                            content.pageContent.heroCelebrityPhoto.node
-                                .sourceUrl
+                            content?.pageContent?.heroCelebrityPhoto?.node?.sourceUrl
                         }
-                        alt={content.pageContent.heroCelebrityPhoto.node.title}
+                        alt={content?.pageContent?.heroCelebrityPhoto?.node?.title}
                         width={
-                            content.pageContent.heroCelebrityPhoto.node
-                                .mediaDetails.width
+                            content?.pageContent?.heroCelebrityPhoto?.node?.mediaDetails?.width
                         }
                         height={
-                            content.pageContent.heroCelebrityPhoto.node
-                                .mediaDetails.height
+                            content?.pageContent?.heroCelebrityPhoto?.node?.mediaDetails?.height
                         }
                         // priority
                         className="object-contain  object-right-bottom ml-[25%]"
