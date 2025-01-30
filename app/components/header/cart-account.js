@@ -79,7 +79,7 @@ export default function CartAccount(props) {
                             strokeLinejoin="round"
                         />
                     </svg>
-                    <span className="hidden md:inline text-[#005371] font-manrope">Dashboard</span>
+                    <span className="hidden md:inline text-[#005371] font-manrope font-semibold ">Dashboard</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="15"
@@ -153,7 +153,7 @@ export default function CartAccount(props) {
         );
     } else {
         return (
-            <nav className="flex justify-end items-center font-manrope gap-10 text-[#005371]">
+            <nav className="flex justify-end items-center font-manrope  font-semibold gap-10 text-[#005371]">
                 <Link
                     href="/login"
                     className="flex items-center gap-2 relative"

@@ -354,7 +354,7 @@ export default async function Home() {
                         <div className="relative ">
                             <section className="container mx-auto lg:w-[80%] px-4 ">
                                 <div className="text-start text-[125px] leading-none pb-2 py-10 ">
-                                    <h2 className="leading-none text-[#00537152] font-medium text-[20px] font-quatro">SHOP</h2>
+                                    <h2 className="leading-none text-[#00537152] font-[400] text-[20px] font-quatro">SHOP</h2>
                                     <h2 className="leading-none text-primary text-[64px] font-semibold font-quatro">by strain</h2>
                                 </div>
                                 <ShopStrains />
@@ -394,14 +394,14 @@ export default async function Home() {
 
                 <div className="absolute inset-0 bg-[#378aa8] opacity-60  rounded-2xl"></div>
                 <div className="relative flex flex-col items-center text-center z-10">
-                    <p className="text-sm uppercase tracking-wide text-[#FFFF] font-bold mb-2">
+                    <p className="text-sm uppercase font-quatro tracking-wide text-[#FFFF] text-[20px] font-medium mb-2">
                         Need a Prescription?
                     </p>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#FFFF] lg:text-[100px] font-light mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-quatro text-[#FFFF] lg:text-[100px] font-light mb-6">
                         Refer to your doctor
                     </h2>
                     <Link href="/dashboard/eligibility">
-                        <button className="text-[#FFFF] bg-[#098b74]  py-4 px-6 font-medium rounded-[10px]">
+                        <button className="text-[#FFFF] bg-[#098b74] font-quatro uppercase py-4 px-6 font-medium rounded-[10px]">
                             Refer Now
                         </button>
                     </Link>
@@ -476,8 +476,8 @@ export default async function Home() {
                 </div>
                 <div className="container mx-auto px-4">
                     <div className="text-center text-[#005371]">
-                        <span className="text-[#00537152] text-[20px]">EXCLUSIVE TO US</span> <br />
-                        <span className="text-[94px]">Blue Dream</span>
+                        <span className="text-[#00537152] text-[20px] font-quatro">EXCLUSIVE TO US</span> <br />
+                        <span className="text-[94px] ">Blue Dream</span>
                         {/* <h2>EXCLUSIVE TO US <br /> Blue Dream {content.title}</h2> */}
                     </div>
                     <div className="mx-auto sm:max-w-[80%] md:max-w-full backdrop-blur-[10px] rounded-[20px]  border-4 border-[#005371] p-8 sm:p-16 mt-8 sm:mt-16 grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
@@ -575,7 +575,7 @@ export default async function Home() {
                             <TextHightlight
                                 text={
                                     <p
-                                        className="text-4xl sm:text-5xl lg:text-[47px] !font-thin text-white text-center leading-tight"
+                                        className="text-4xl sm:text-5xl lg:text-[47px] !font-thin text-[#FFFFFF] text-center font-quatro leading-tight"
                                         dangerouslySetInnerHTML={{
                                             __html: content.pageContent.largeParagraphText,
                                         }}
@@ -595,15 +595,15 @@ export default async function Home() {
                 <section className="relative">
                     <div className="container mx-auto px-4 md:flex md:justify-center">
                         <div>
-                            <h2 className="text-4xl sm:text-[94px] leading-tight font-normal text-center">
+                            <h2 className="text-4xl sm:text-[94px] leading-tight font-quatro font-medium text-center">
                                 Made possible <br />
                             </h2>
                             <div className="flex items-center justify-center md:justify-end -mt-6">
-                                <div className="text-center mt-0 text-[40px]">with</div>
+                                <div className="text-center mt-0 text-[40px] font-quatro font-[350]">with</div>
                                 <img className="w-[100px] md:w-auto" src="/images/logos/green.png" alt="" />
                             </div>
                             <p
-                                className="text-[18px] font-light max-w-[750px] mb-8 text-center"
+                                className="text-[18px] font-light max-w-[750px] mb-8 text-start"
                                 dangerouslySetInnerHTML={{
                                     __html: content.pageContent.madePossibleParagraphText,
                                 }}
@@ -650,7 +650,7 @@ export default async function Home() {
                             <h2 className="text-5xl sm:text-[74px] font-semibold text-[#005371]">
                                 Questions?
                             </h2>
-                            <p className="text-[#005371] font- text-2xl sm:text-3xl ">
+                            <p className="text-[#005371] font-fontspring font-[300] text-2xl sm:text-3xl ">
                                 We&apos;ve got answers...
                             </p>
                         </div>
@@ -663,7 +663,7 @@ export default async function Home() {
                 <div className="container mx-auto px-4">
                     <div>
                         <div className=" text-center">
-                            <p className="text-3xl font-semibold mb-4 text-[#005371]">
+                            <p className="text-3xl font-quatro font-[500] mb-4 text-[#005371]">
                                 Something else on your mind? 🧐
                             </p>
                             <Link href="mailto:support@drgreennft.com">

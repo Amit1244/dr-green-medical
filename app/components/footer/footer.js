@@ -172,19 +172,19 @@ export default async function Footer() {
                     <div className="flex flex-col sm:flex-row justify-start items-start gap-16">
                         {/* Support Section */}
                         <div>
-                            <p className="opacity-50 text-[19px] text-[#005371] font-semibold tracking-wider mb-4">
+                            <p className="text-[19px] text-[#005371] font-quatro font-semibold  tracking-wider mb-4">
                                 Support
                             </p>
                             <div className="flex flex-col gap-y-4">
                                 <Link
                                     href="/"
-                                    className="text-base text-[#005371] font-medium font-montserrat"
+                                    className="text-base text-[#005371] font-medium font-quatro"
                                 >
                                     Contact
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="text-base text-[#005371] font-medium font-montserrat"
+                                    className="text-base text-[#005371] font-medium font-quatro"
                                 >
                                     FAQs
                                 </Link>
@@ -193,31 +193,31 @@ export default async function Footer() {
 
                         {/* Quick Links Section */}
                         <div>
-                            <p className="opacity-50 text-[19px] text-[#005371] font-semibold tracking-wider mb-4">
+                            <p className="text-[19px] text-[#005371] font-semibold tracking-wider mb-4">
                                 Quick Links
                             </p>
                             <div className="flex flex-col gap-y-4">
                                 <Link
                                     href="https://drgreennft.com/"
-                                    className="text-base font-medium text-[#005371] font-montserrat"
+                                    className="text-base font-medium text-[#005371] font-quatro"
                                 >
                                     About Us
                                 </Link>
                                 <Link
                                     href="/#process"
-                                    className="text-base font-medium text-[#005371] font-montserrat"
+                                    className="text-base font-medium text-[#005371] font-quatro"
                                 >
                                     The Process
                                 </Link>
                                 <Link
                                     href="#news"
-                                    className="text-base font-medium text-[#005371] font-montserrat"
+                                    className="text-base font-medium text-[#005371] font-quatro"
                                 >
                                     News
                                 </Link>
                                 <Link
                                     href="mailto:support@drgreennft.com"
-                                    className="text-base font-medium text-[#005371] font-montserrat"
+                                    className="text-base font-medium text-[#005371] font-quatro"
                                 >
                                     Contact
                                 </Link>
@@ -226,7 +226,7 @@ export default async function Footer() {
 
                         {/* Legal Section */}
                         <div>
-                            <p className="opacity-50 text-[19px] text-[#005371] font-semibold tracking-wider mb-4">
+                            <p className="0 text-[19px] text-[#005371] font-semibold tracking-wider mb-4">
                                 Legal
                             </p>
                             <div className="flex flex-col gap-y-4">
@@ -254,10 +254,10 @@ export default async function Footer() {
 
 
                     <div>
-                        <p className=" text-[22px] font-medium text-[#005371] tracking-wider mb-4">
+                        <p className=" text-[22px] text-[#005371] font-quatro font-semibold tracking-wider mb-4">
                             Join the community
                         </p>
-                        <p className="text-base text-[#005371] mb-2">
+                        <p className="text-base text-[#005371] font-quatro font-medium mb-2">
                             Register your details today to ensure you&apos;re
                             among the chosen few who get to witness the dawn of
                             a new era in Cannabis Delivery. Your Digital Key
@@ -273,14 +273,14 @@ export default async function Footer() {
                                 className="p-3 flex-grow rounded-[7px] bg-[#0053711A] border-[#005371] text-black outline-0"
                             />
                             <button
-                                className="uppercase py-4 p-3 px-6 mt-2 md:mt-0 rounded-[7px] bg-primary text-[#FFFF] border border-primary text-[15px] shadow hover:shadow-[0_0_15px_0px_#EBCFA6] duration-200 ease-in-out"
+                                className="uppercase py-4 p-3 px-6 mt-2 md:mt-0 rounded-[7px] bg-[#008B74] text-[#FFFF] border border-[#008B74] text-[15px] shadow hover:shadow-[0_0_15px_0px_#EBCFA6] duration-200 ease-in-out"
                                 title="Check Eligibility"
                             >
                                 Submit
                             </button>
                         </div>
 
-                        <p className="text-[13px] text-[#005371] tracking-tight">
+                        <p className="text-[13px] text-[#005371] font-quatro tracking-tight">
                             Your data will be used to process your submission,
                             support your experience throughout this website, and
                             for other purposes described in our{" "}
