@@ -37,7 +37,7 @@ export default async function ShopStrains() {
             // strains={strains.data.strains}
             // totalStrains={strains.data.pageMetaDto.itemCount}
             countryCode={countryCode}
-            takeStrains={"6"}
+            takeStrains={"9"}
         />
     );
 }

@@ -242,7 +242,7 @@ export default async function Home() {
                         </p>
                     </div>
                 </div>
-                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
+                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%]   w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-50">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -258,7 +258,7 @@ export default async function Home() {
                                 .mediaDetails.height
                         }
                         // priority
-                        className="object-contain  object-right-bottom ml-[25%]"
+                        className="object-contain mix-blend-multiply  object-right-bottom ml-[30%]  "
                     />
                 </div>
 
@@ -354,18 +354,29 @@ export default async function Home() {
             {
                 availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
                     <>
-                        <section className="container mx-auto lg:w-[80%] px-4">
-                            <div className="text-start text-[125px] leading-none pb-2">
-                                <h2 className="leading-none text-[#00537152] font-medium text-[20px] font-quatro">SHOP</h2>
-                                <h2 className="leading-none text-primary text-[64px] font-semibold font-quatro">by strain</h2>
-                            </div>
-                            <ShopStrains />
-                        </section>
+                        <div className="relative ">
+                            <section className="container mx-auto lg:w-[80%] px-4 ">
+                                <div className="text-start text-[125px] leading-none pb-2 py-10 ">
+                                    <h2 className="leading-none text-[#00537152] font-medium text-[20px] font-quatro">SHOP</h2>
+                                    <h2 className="leading-none text-primary text-[64px] font-semibold font-quatro">by strain</h2>
+                                </div>
+                                <ShopStrains />
+
+
+                            </section>
+                            <Image
+                                className="absolute -left-60 top-10 -rotate-45 mix-blend-multiply -z-20 pointer-events-none"
+                                src="/images/general/stethoscope.png"
+                                alt="Comet"
+                                width={942}
+                                height={1100}
+                            />
+                        </div>
                     </>
                 )
             }
 
-            <section className="relative text-white mt-16 py-32 px-6 mx-2 sm:mx-8 rounded-2xl">
+            <section className="relative text-white mt-16 py-32 px-6 mx-2 sm:mx-8 rounded-2xl overflow-hidden">
                 <video
                     className="absolute inset-0 w-full h-full object-cover rounded-2xl z-[-20]"
                     src="/videos/smoke.mp4"
@@ -376,13 +387,20 @@ export default async function Home() {
                 >
                     Your browser does not support the video tag.
                 </video>
+                <video
+                    className="absolute mix-blend-screen  -right-72 h-full  z-10 object-cover rounded-2xl"
+                    src="/videos/green-flower.mp4"
+                    autoPlay
+                    loop
+                    muted
+                ></video>
 
-                <div className="absolute inset-0 bg-primary opacity-60 rounded-2xl"></div> {/* Overlay div */}
+                <div className="absolute inset-0 bg-[#378aa8] opacity-60  rounded-2xl"></div>
                 <div className="relative flex flex-col items-center text-center z-10">
                     <p className="text-sm uppercase tracking-wide text-[#FFFF] font-bold mb-2">
                         Need a Prescription?
                     </p>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#FFFF] lg:text-[100px] font-semibold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#FFFF] lg:text-[100px] font-light mb-6">
                         Refer to your doctor
                     </h2>
                     <Link href="/dashboard/eligibility">
