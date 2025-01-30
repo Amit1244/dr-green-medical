@@ -255,21 +255,9 @@ export default async function Home() {
                             content?.pageContent?.heroCelebrityPhoto?.node?.mediaDetails?.height
                         }
                         // priority
-                        className="object-contain mix-blend-multiply  object-right-bottom ml-[30%]  "
+                        className="object-contain   object-right-bottom ml-[30%]  "
                     />
                 </div>
-
-                {/* <video
-                    className="absolute left-0 hidden sm:block top-[70%] 2xl:top-[50%] max-w-[40%] max-h-full object-fit w-auto h-auto object-left z-[-10] pointer-events-none"
-                    src="/images/videos/heartbeat.gif"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    width={735}
-                    height={910}
-                    alt="Rock Video"
-                /> */}
             </section>
 
             {/* <section className="pt-8 sm:pt-0" id="process">
@@ -353,7 +341,7 @@ export default async function Home() {
                     <>
                         <div className="relative overflow-x-hidden">
                             <section className="container mx-auto lg:w-[80%] px-4 ">
-                                <div className="text-start text-[125px] leading-none pb-2 py-10 ">
+                                <div className="text-start text-[125px] leading-none  py-10 ">
                                     <h2 className="leading-none text-[#00537152] font-[400] text-[20px] font-quatro">SHOP</h2>
                                     <h2 className="leading-none text-primary text-[64px] font-semibold font-quatro">by strain</h2>
                                 </div>
@@ -362,7 +350,7 @@ export default async function Home() {
 
                             </section>
                             <Image
-                                className="absolute -left-60 top-10 -rotate-45 mix-blend-multiply -z-20 pointer-events-none"
+                                className="absolute -left-60 top-10 -rotate-45 mix-blend-multiply max-w-[70%] opacity-40 -z-20 pointer-events-none"
                                 src="/images/general/stethoscope.png"
                                 alt="Comet"
                                 width={942}
@@ -441,8 +429,8 @@ export default async function Home() {
                 </div> */}
             {/* </section> */}
 
-            <section className="mt-10 lg:mt-32 lg:px-20 py-10 sm:py-16 relative overflow-x-hidden">
-                <div className="absolute top-0 left-0 w-full h-full z-[-10] pointer-events-none mask-top-bottom mix-blend-screen">
+            <section className="mt-10 lg:mt-32 lg:px-20 py-10 sm:py-16 relative  overflow-x-hidden  overflow-y-hidden ">
+                <div className="absolute top-0 left-0 w-full h-full z-[-10] pointer-events-none mix-blend-screen">
                     <LowPowerModeVideo
                         image={
                             <Image
@@ -474,7 +462,7 @@ export default async function Home() {
                         }
                     />
                 </div>
-                <div className="container mx-auto px-4 overflow-x-hidden">
+                <div className="container mx-auto px-4 ">
                     <div className="text-center text-[#005371]">
                         <span className="text-[#00537152] text-[20px] font-quatro">EXCLUSIVE TO US</span> <br />
                         <span className="text-[94px] ">Blue Dream</span>
@@ -521,15 +509,14 @@ export default async function Home() {
 
                     </div>
                 </div>
-
-                <Image
-                    className="absolute -right-[7%]  top-[80%] max-w-[50%] sm:max-w-[40%] md:max-w-[30%] h-auto w-auto object-fit object-left -z-[10] rotate-[30deg] pointer-events-none"
+            </section>
+            <div className="flex justify-end -mt-32 overflow-x-hidden  overflow-y-hidden">
+                <img
+                    className="max-w-[30%] object-left opacity-40 rotate-[30deg] pointer-events-none md:-mr-32"
                     src="/images/general/stethoscope.png"
                     alt="Comet"
-                    width={942}
-                    height={1100}
                 />
-            </section>
+            </div>
 
             {/* <section className="mt-20 sm:mt-0">
                 <div className="container mx-auto px-4">
@@ -545,14 +532,12 @@ export default async function Home() {
                 </div>
             </section> */}
 
+
             {/* lorem text and learn more  */}
             <div
-                className="relative h-[200vh]"
-                style={{
-                    WebkitMaskImage: "linear-gradient(to bottom, transparent, white 20%, white 80%, transparent)",
-                    maskImage: "linear-gradient(to bottom, transparent, white 20%, white 80%, transparent)"
-                }}
+                className="relative mask-top-bottom"
             >
+
                 {/* Video Background */}
                 <video
                     className="absolute top-0 left-0 h-full w-full object-cover object-center -z-50"
@@ -569,7 +554,7 @@ export default async function Home() {
                 <div className="bg-[#378aa8] absolute top-0 left-0 w-full h-full opacity-80"></div>
 
                 {/* Section 1 */}
-                <section className="py-10 md:pt-56 relative">
+                <section className="py-10  relative">
                     <div className="container mx-auto px-4">
                         <div className="lg:w-[80%] m-auto">
                             <TextHightlight
@@ -587,7 +572,7 @@ export default async function Home() {
                     </div>
                 </section>
 
-                <div className="container mx-auto w-[80%] flex justify-center">
+                <div className="container mx-auto w-[80%] flex justify-center ">
                     <img src="/videos/heartbeat.gif" className="w-1/2" alt="" />
                 </div>
 
