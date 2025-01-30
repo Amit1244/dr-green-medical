@@ -182,7 +182,7 @@ export default async function Home() {
 
     return (
         <main>
-            <section id="hero" className="md:pt-48 pt-28 bg-center relative min-h-screen">
+            <section id="hero" className="md:pt-48 pt-28 bg-center relative min-h-screen overflow-x-hidden">
                 {/* <Image
                     src={content.pageContent.heroPlanet.node.sourceUrl}
                     alt={content.pageContent.heroPlanet.node.title}
@@ -351,7 +351,7 @@ export default async function Home() {
             {
                 availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
                     <>
-                        <div className="relative ">
+                        <div className="relative overflow-x-hidden">
                             <section className="container mx-auto lg:w-[80%] px-4 ">
                                 <div className="text-start text-[125px] leading-none pb-2 py-10 ">
                                     <h2 className="leading-none text-[#00537152] font-[400] text-[20px] font-quatro">SHOP</h2>
@@ -441,7 +441,7 @@ export default async function Home() {
                 </div> */}
             {/* </section> */}
 
-            <section className="mt-10 lg:mt-32 lg:px-20 py-10 sm:py-16 relative">
+            <section className="mt-10 lg:mt-32 lg:px-20 py-10 sm:py-16 relative overflow-x-hidden">
                 <div className="absolute top-0 left-0 w-full h-full z-[-10] pointer-events-none mask-top-bottom mix-blend-screen">
                     <LowPowerModeVideo
                         image={
@@ -474,7 +474,7 @@ export default async function Home() {
                         }
                     />
                 </div>
-                <div className="container mx-auto px-4">
+                <div className="container mx-auto px-4 overflow-x-hidden">
                     <div className="text-center text-[#005371]">
                         <span className="text-[#00537152] text-[20px] font-quatro">EXCLUSIVE TO US</span> <br />
                         <span className="text-[94px] ">Blue Dream</span>
