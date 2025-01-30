@@ -14,7 +14,7 @@ module.exports = {
                 montserrat: ["var(--font-montserrat)"],
                 quatro: ['Quatro', 'sans-serif'], // Add the font name
                 manrope: ['Manrope', 'sans-serif'], // Add the font name
-                fontspring: ['Fontspring', 'sans-serif'],
+                fontspring: ['CeraPro', 'sans-serif'],
             },
             keyframes: {
                 wiggle: {

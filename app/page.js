@@ -523,8 +523,8 @@ export default async function Home() {
                 </div>
 
                 <Image
-                    className="absolute right-0  top-[60%] max-w-[50%] sm:max-w-[40%] md:max-w-[30%] h-auto w-auto object-fit object-left z-[10] pointer-events-none"
-                    src="/images/icons/stethoscope.svg"
+                    className="absolute -right-[7%]  top-[80%] max-w-[50%] sm:max-w-[40%] md:max-w-[30%] h-auto w-auto object-fit object-left -z-[10] rotate-[30deg] pointer-events-none"
+                    src="/images/general/stethoscope.png"
                     alt="Comet"
                     width={942}
                     height={1100}
@@ -546,10 +546,16 @@ export default async function Home() {
             </section> */}
 
             {/* lorem text and learn more  */}
-            <div className="relative mask-top-bottom">
+            <div
+                className="relative h-[200vh]"
+                style={{
+                    WebkitMaskImage: "linear-gradient(to bottom, transparent, white 20%, white 80%, transparent)",
+                    maskImage: "linear-gradient(to bottom, transparent, white 20%, white 80%, transparent)"
+                }}
+            >
                 {/* Video Background */}
                 <video
-                    className="absolute top-0 left-0 h-full w-full object-cover object-top -z-50"
+                    className="absolute top-0 left-0 h-full w-full object-cover object-center -z-50"
                     src="/videos/smoke.mp4"
                     autoPlay
                     muted
@@ -560,15 +566,10 @@ export default async function Home() {
                     Your browser does not support the video tag.
                 </video>
 
+                <div className="bg-[#378aa8] absolute top-0 left-0 w-full h-full opacity-80"></div>
+
                 {/* Section 1 */}
                 <section className="py-10 md:pt-56 relative">
-                    {/* <Image
-                        className="absolute right-0 -bottom-96 max-w-[50%] sm:max-w-[40%] md:max-w-[30%] h-auto w-auto object-fit object-left z-[-10] pointer-events-none"
-                        src="/images/icons/stethoscope.svg"
-                        alt="Comet"
-                        width={942}
-                        height={1100}
-                    /> */}
                     <div className="container mx-auto px-4">
                         <div className="lg:w-[80%] m-auto">
                             <TextHightlight
@@ -586,22 +587,20 @@ export default async function Home() {
                     </div>
                 </section>
 
-
                 <div className="container mx-auto w-[80%] flex justify-center">
                     <img src="/videos/heartbeat.gif" className="w-1/2" alt="" />
                 </div>
 
-
                 {/* Section 2 */}
-                <section className="relative ">
+                <section className="relative">
                     <div className="container mx-auto px-4 md:flex md:justify-center">
                         <div>
-                            <h2 className="text-4xl sm:text-[94px] leading-tight font-semibold  text-center">
+                            <h2 className="text-4xl sm:text-[94px] leading-tight font-normal text-center">
                                 Made possible <br />
                             </h2>
                             <div className="flex items-center justify-center md:justify-end -mt-6">
                                 <div className="text-center mt-0 text-[40px]">with</div>
-                                <img className="w-[100px] md:w-auto " src="/images/logos/green.png" alt="" />
+                                <img className="w-[100px] md:w-auto" src="/images/logos/green.png" alt="" />
                             </div>
                             <p
                                 className="text-[18px] font-light max-w-[750px] mb-8 text-center"
@@ -619,39 +618,11 @@ export default async function Home() {
                                     </button>
                                 </Link>
                             </div>
-                            {/* <div className="mt-10 sm:mt-0 xl:mt-[-10%] pointer-events-none">
-                                <div className="ml-auto w-fit flex flex-col justify-center items-center max-w-full">
-                                    <div className="h-0 pb-[100%] relative max-w-full w-[800px]">
-                                        <img
-                                            className="absolute top-0 left-0 h-full w-full object-cover object-center rounded-full"
-                                            src={
-                                                content.pageContent
-                                                    .madePossibleCelebrityImage.node
-                                                    .sourceUrl
-                                            }
-                                            alt={
-                                                content.pageContent
-                                                    .madePossibleCelebrityImage.node
-                                                    .title
-                                            }
-                                            width={
-                                                content.pageContent
-                                                    .madePossibleCelebrityImage.node
-                                                    .mediaDetails.width
-                                            }
-                                            height={
-                                                content.pageContent
-                                                    .madePossibleCelebrityImage.node
-                                                    .mediaDetails.height
-                                            }
-                                        />
-                                    </div>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </section>
             </div>
+
 
 
             <section className="relative pt-40" id="faqs">
@@ -679,7 +650,7 @@ export default async function Home() {
                             <h2 className="text-5xl sm:text-[74px] font-semibold text-[#005371]">
                                 Questions?
                             </h2>
-                            <p className="text-[#005371] font-fontspring text-2xl sm:text-3xl font-semibold">
+                            <p className="text-[#005371] font- text-2xl sm:text-3xl ">
                                 We&apos;ve got answers...
                             </p>
                         </div>

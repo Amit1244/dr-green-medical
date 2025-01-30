@@ -27,7 +27,7 @@ export default function TextHightlight(props) {
 
     return (
         <div
-            className="text-transparent bg-gradient-to-b from-transparent from-35% via-[#005371] via-55% to-transparent bg-clip-text bg-[length:100%_100vh] sm:bg-[length:100%_100vh] bg-top"
+            className="text-transparent bg-gradient-to-b from-transparent !font-light from-35% via-[#005371] via-55% to-transparent bg-clip-text bg-[length:100%_100vh] sm:bg-[length:100%_100vh] bg-top"
             ref={div}
         >
             {props.text}
